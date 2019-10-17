@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-4.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive-style.css">
+  <link rel="icon" href="assets/images/favicon.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="all" href="assets/css/daterangepicker-bs3.css" />
+	 <title>Soundinbio - Admin</title>
+  <style type="text/css">
+    .range_inputs .daterangepicker_start_input,
+    .range_inputs .daterangepicker_end_input{
+      display: none;
+    }
+    .show-calendar .ranges ul{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 logo-section">
+        <a href="super-admin.html"><img class="logo" src="./assets/images/logo.png" alt="#" /></a>
+      </div>
+      <div class="col-6 user-section">
+        <a href="#"><img class="user-img" src="./assets/images/user.jpg" alt="#" /></a>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 right-side-tab d-flex">
+        <div class="tab">
+          <div class="tab-inner">
+            <button class="tablinks active" onclick="tab(event, 'Comptes')">
+             <svg version="1.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="visible" preserveAspectRatio="none" viewBox="0 0 514 514" xml:space="preserve" y="0px" x="0px" id="Capa_1_1560061432663" width="19" height="19"><g transform="translate(1, 1)"><g>
+                <g>
+                  <path d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148    C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962    c-36.21,12.495-69.398,33.136-97.281,61.018C26.629,379.333,0,443.62,0,512h40c0-119.103,96.897-216,216-216s216,96.897,216,216    h40C512,443.62,485.371,379.333,437.02,330.98z M256,256c-59.551,0-108-48.448-108-108S196.449,40,256,40    c59.551,0,108,48.448,108,108S315.551,256,256,256z" vector-effect="non-scaling-stroke"/>
+                </g>
+              </g><g>
+              </g><g>
+              </g><g>
+              </g><g>
+              </g><g>
+              </g><g>
+              </g><g>
+              </g><g>
+              </g><g>
+              </g><g>
+              </g><g>
+              </g><g>
+              </g><g>
+              </g><g>
+              </g><g>
+              </g></g>
+              </svg>
+              <span>Comptes</span>
+            </button>
+            <button class="tablinks" onclick="tab(event, 'Analytics')">
+              <svg version="1.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="visible" preserveAspectRatio="none" viewBox="0 0 514 514" xml:space="preserve" y="0px" x="0px" id="Layer_1_1560061534414" width="20" height="20"><g transform="translate(1, 1)"><g>
+                <g>
+                  <path d="M499.904,456.607H12.096C5.415,456.607,0,462.022,0,468.703c0,6.679,5.415,12.096,12.096,12.096h487.808    c6.679,0,12.096-5.417,12.096-12.096C512,462.023,506.585,456.607,499.904,456.607z" vector-effect="non-scaling-stroke" style="fill: rgb(0, 0, 0);"/>
+                </g>
+                </g><g>
+                  <g>
+                    <path d="M468.37,88.305h-84.948c-6.679,0-12.096,5.417-12.096,12.096v82.24h-60.757V43.297c0-6.679-5.417-12.096-12.096-12.096    h-84.95c-6.679,0-12.096,5.417-12.096,12.096v228.882h-60.757V169.36c0-6.681-5.417-12.096-12.096-12.096H43.626    c-6.681,0-12.096,5.415-12.096,12.096v231.563c0,6.681,5.417,12.096,12.096,12.096h84.948h84.948h84.95h84.949h84.948    c6.681,0,12.096-5.417,12.096-12.096V100.401C480.466,93.722,475.051,88.305,468.37,88.305z M116.479,388.827H55.722V181.456    h60.757V388.827z M201.429,388.827h-60.757v-92.456h60.757V388.827z M286.378,194.737v194.09H225.62V55.393h60.758V194.737z     M371.328,388.827h-60.757V206.833h60.757V388.827z M456.276,388.827H395.52v-194.09v-82.24h60.757V388.827z" vector-effect="non-scaling-stroke" style="fill: rgb(0, 0, 0);"/>
+                  </g>
+                </g><g>
+                </g><g>
+                </g><g>
+                </g><g>
+                </g><g>
+                </g><g>
+                </g><g>
+                </g><g>
+                </g><g>
+                </g><g>
+                </g><g>
+                </g><g>
+                </g><g>
+                </g><g>
+                </g><g>
+                </g></g>
+              </svg>
+              <span>Analytics</span>
+            </button>
+            <button class="tablinks"> 
+              <svg version="1.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="visible" preserveAspectRatio="none" viewBox="0 0 514 514" xml:space="preserve" y="0px" x="0px" id="Capa_1_1560061371158" width="16" height="16"><g transform="translate(1, 1)"><g>
+                <g>
+                  <path d="M255.15,468.625H63.787c-11.737,0-21.262-9.526-21.262-21.262V64.638c0-11.737,9.526-21.262,21.262-21.262H255.15    c11.758,0,21.262-9.504,21.262-21.262S266.908,0.85,255.15,0.85H63.787C28.619,0.85,0,29.47,0,64.638v382.724    c0,35.168,28.619,63.787,63.787,63.787H255.15c11.758,0,21.262-9.504,21.262-21.262    C276.412,478.129,266.908,468.625,255.15,468.625z" vector-effect="non-scaling-stroke" style="fill: rgb(127, 141, 153);"/>
+                </g>
+                </g><g>
+                  <g>
+                    <path d="M505.664,240.861L376.388,113.286c-8.335-8.25-21.815-8.143-30.065,0.213s-8.165,21.815,0.213,30.065l92.385,91.173    H191.362c-11.758,0-21.262,9.504-21.262,21.262c0,11.758,9.504,21.263,21.262,21.263h247.559l-92.385,91.173    c-8.377,8.25-8.441,21.709-0.213,30.065c4.167,4.21,9.653,6.336,15.139,6.336c5.401,0,10.801-2.041,14.926-6.124l129.276-127.575    c4.04-3.997,6.336-9.441,6.336-15.139C512,250.302,509.725,244.88,505.664,240.861z" vector-effect="non-scaling-stroke" style="fill: rgb(127, 141, 153);"/>
+                  </g>
+                </g><g>
+                </g><g>
+                </g><g>
+                </g><g>
+                </g><g>
+                </g><g>
+                </g><g>
+                </g><g>
+                </g><g>
+                </g><g>
+                </g><g>
+                </g><g>
+                </g><g>
+                </g><g>
+                </g><g>
+                </g></g>
+              </svg>
+              <span>Déconnexion</span>
+            </button>
+            
+          </div>
+        </div>
+
+        <div id="Comptes" class="tabcontent">
+          <h3>Comptes utilisateurs</h3>
+          <h6><a data-toggle="modal" data-target="#myModal">Créer un compte</a></h6>
+          <p>Créez compte utilsateur (individuel ou multi-compte)</p>
+          <table width="100%" cellspacing="0" cellpadding="0" border="0">
+            <thead>
+              <tr>
+                <th>Utilisateur</th>
+                <th>Compte</th>
+                <th>Société</th>
+                <th>Nb artistes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="./assets/images/user-img1.png" alt="#" /> <a href="#">John Do</a></td>
+                <td>Business</td>
+                <td>Boumayé</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td><img src="./assets/images/user-img2.jpeg" alt="#" /> <a href="#">John Do</a></td>
+                <td>Business</td>
+                <td>Sony music</td>
+                <td>6</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="delete-para">Supprimer</p>
+        </div>
+
+        <div id="Analytics" class="tabcontent" style="display: none;">
+          <h3>Audiences <input type="text" name="periode" id="periode" /></h3>
+          <div class="chart">
+            <div class="chart-col">
+              <div class="chart-box">
+                <div></div>
+                <p>Visites<br><span>1294</span></p>
+              </div>
+              <div class="chart-box">
+                <div></div>
+                <p>Clics<br><span>94</span></p>
+              </div>
+              <div class="chart-box">
+                <div></div>
+                <p>Taux de clics<br><span>7%</span></p>
+              </div>
+            </div>
+            <canvas id="myChart"></canvas>
+          </div>
+
+          <hr class="line" />
+
+          <h3 class="h3-1">Audience par artiste</h3>
+
+          <table width="100%" cellspacing="0" cellpadding="0" border="0">
+            <thead>
+              <tr>
+                <th>Fan page</th>
+                <th>Compte</th>
+                <th>Société</th>
+                <th>Nb Visites</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="./assets/images/user-img3.jpg" alt="#" /> <a href="#">Bramsito</a></td>
+                <td>Business</td>
+                <td>Boumayé</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td><img src="./assets/images/user-img4.jpg" alt="#" /> <a href="#">Gims</a></td>
+                <td>Business</td>
+                <td>Sony music</td>
+                <td>6</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<p id="error"><span>Nous vous avons envoyé un e-mail.  Cliquez sur le lien de validation dans l'e-mail pour valider votre compte</span> <img src="./assets/images/cross.png" alt="#" /></p>
+
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">CRÉER UN COMPTE</h4>
+        <button type="button" class="close" data-dismiss="modal">
+          <svg version="1.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="visible" preserveAspectRatio="none" viewBox="0 0 44 44" width="15" height="15"><g>
+              <g>
+                <polygon class="st0" points="44,21 23,21 23,0 21,0 21,21 0,21 0,23 21,23 21,44 23,44 23,23 44,23   " style="fill: rgb(0, 0, 0);" vector-effect="non-scaling-stroke"/>
+              </g>
+            </g><g/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="form-tab-main">
+          <div class="form-tab-col">
+            <p class="active" data-toggle="signup-toggle">PERSONNEL</p>
+            <p data-toggle="signup-toggle1">BUSINESS</p>
+          </div>
+          <form name="signup" class="tab-form signup-toggle" method="post" action="">
+            <div class="form-group">
+              <label>Prénom *</label>
+              <input type="text" placeholder="John" name="prenom" />
+              <hr />
+            </div>
+            <div class="form-group">
+              <label>Nom *</label>
+              <input required="" type="text" placeholder="Do" name="nom" />
+              <hr />
+            </div>
+            <div class="form-group">
+              <label>E-mail *</label>
+              <input required="" type="text" placeholder="johndo@mail.com" name="entreprise" />
+              <hr />
+            </div>
+            <div class="form-group mb-0">
+              <button onclick="validateForm()" type="submit">Créer le compte</button>
+            </div>
+          </form>
+          <form name="signup1" class="tab-form signup-toggle1" style="display: none;" method="post" action="">
+            <div class="form-group">
+              <label>Prénom *</label>
+              <input required="" type="text" placeholder="John" name="prenom1" />
+              <hr />
+            </div>
+            <div class="form-group">
+              <label>Nom *</label>
+              <input required="" type="text" placeholder="Do" name="nom1" />
+              <hr />
+            </div>
+            <div class="form-group">
+              <label>Adresse e-mail professionnelle *</label>
+              <input required="" type="text" placeholder="johndo@company.com" name="email1" />
+              <hr />
+            </div>
+            <div class="form-group">
+              <label>Type de société *</label>
+              <select required="" name="statute1"> 
+                <option>Label</option> 
+                <option>Distributeur</option> 
+                <option>Manager</option> 
+              </select>
+              <hr />
+            </div>
+            <div class="form-group">
+              <label>Nom de société *</label>
+              <input required="" type="email" placeholder="Company name" name="societe1" />
+              <hr />
+            </div>
+            <div class="form-group mb-0">
+              <button onclick="validateForm1()" type="submit">Créer un compte</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="assets/js/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="assets/js/popper.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-4.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/moment-with-langs.min.js"></script>
+<script type="text/javascript" src="assets/js/daterangepicker.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script type="text/javascript">
+  var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [
+              {
+                  label: 'Clics',
+                  backgroundColor: 'rgba(255, 123, 151, .6)',
+                  borderWidth: 2,
+                  borderColor: 'rgba(255, 123, 151, 1)',
+                  data: [0, 10, 5, 2, 20, 30, 45]
+              },
+              {
+                  label: 'Visites',
+                  backgroundColor: 'rgba(56, 151, 240, .6)',
+                  borderWidth: 2,
+                  borderColor: 'rgba(56, 151, 240, 1)',
+                  data: [0, 10, 5, 2, 20, 30, 45]
+              }
+        ]
+    },
+
+    // Configuration options go here
+    options: {
+      legend: { 
+            display: false 
+        },
+        scales: {
+            xAxes: [{
+              stacked: true,
+            }],
+            yAxes: [{
+              stacked: true
+            }]
+          }
+    }
+});
+</script>
+<script type="text/javascript">
+  $(document).ready( function() {
+    var now = new Date();
+    var month = (now.getMonth() + 1);               
+    var day = now.getDate();
+    if (month < 10) 
+        month = "0" + month;
+    if (day < 10) 
+        day = "0" + day;
+    var today = day + '-' + month + '-' + now.getFullYear();
+    $('#periode').val(today);
+});
+</script>
+<script type="text/javascript">
+
+moment.lang('fr');
+
+var pickerLocale = {
+    applyLabel: 'OK',
+    cancelLabel: 'Annuler',
+    fromLabel: 'Entre',
+    toLabel: 'et',
+    customRangeLabel: 'Période personnalisée',
+    daysOfWeek: moment().lang()._weekdaysMin,
+    monthNames: moment().lang()._months,
+    firstDay: 0
+};
+
+var pickerRanges = {
+   'Aujourd\'hui': [moment(), moment()],
+   'Hier': [moment().subtract('days', 1), moment().subtract('days', 1)],
+   '5 jours précédents': [moment().subtract('days', 4), moment().subtract('days', 1)],
+   'Ce mois': [moment().startOf('month'), moment().endOf('month')],
+   'Mois précedent': [moment().subtract('month', 1).startOf('month'), moment().subtract('month', 1).endOf('month')]
+};
+
+
+ $(document).ready(function() {
+    $('#periode').daterangepicker(
+       {
+          showDropdowns: true,
+          ranges: pickerRanges,
+          format: 'DD/MM/YYYY',
+          separator: ' - ',
+          locale: pickerLocale
+       }
+   );
+    $('#periode_heure').daterangepicker(
+       {
+          startDate: moment().subtract('days', 1),
+          endDate: moment(),
+          showDropdowns: false,
+          showWeekNumbers: true,
+          timePicker: true,
+          timePickerIncrement: 1,
+          timePicker12Hour: false,
+          ranges: pickerRanges,
+          format: 'DD/MM/YYYY hh:mm',
+          separator: ' à ',
+          locale: pickerLocale
+       }
+    );
+    $('#date_simple').daterangepicker(
+       {
+          startDate: moment(),
+          format: 'DD/MM/YYYY',
+          singleDatePicker: true,
+          locale: pickerLocale
+       }
+   );
+
+ });
+
+
+</script>
+<script>
+function validateForm() {
+
+    $('#error span').html('Compte crée !');
+
+    var input2 = $('form[name="signup"] input[name="nom"]').val();
+    var input5 = $('form[name="signup"] input[name="societe"]').val();
+    var input7 = $('form[name="signup"] input[name="entreprise"]').val();
+    var input8 = $('form[name="signup"] input[name="instagram"]').val();
+    var input9 = $('form[name="signup"] input[name="projet"]').val();
+
+    $('.form-group input, .form-group select').css('border-color', '#e6eaee');
+
+    if (input2 == null || input2 == "") {
+      $('form[name="signup"] input[name="nom"]').css('border-color', '#f44336');
+        $('#error').show();
+        return false;
+    } else if (input7 == null || input7 == "") {
+      $('form[name="signup"] input[name="entreprise"]').css('border-color', '#f44336');
+        $('#error').show();
+        return false;
+    } else if (input8 == null || input8 == "") {
+      $('form[name="signup"] input[name="instagram"]').css('border-color', '#f44336');
+        $('#error').show();
+        return false;
+    } else if (input9 == null || input9 == "") {
+      $('form[name="signup"] input[name="projet"]').css('border-color', '#f44336');
+        $('#error').show();
+        return false;
+    } else if (input5 == null || input5 == "") {
+      $('form[name="signup"] input[name="societe"]').css('border-color', '#f44336');
+        $('#error').show();
+        return false;
+    }
+}
+</script>
+<script>
+function validateForm1() {
+
+    $('#error span').html('Compte crée !');
+
+    var input1 = $('form[name="signup1"] input[name="prenom1"]').val();
+    var input2 = $('form[name="signup1"] input[name="nom1"]').val();
+    var input3 = $('form[name="signup1"] input[name="email1"]').val();
+    var input4 = $('form[name="signup1"] select[name="statute1"]').val();
+    var input5 = $('form[name="signup1"] input[name="societe1"]').val();
+    var input6 = $('form[name="signup1"] input[name="checkbox11"]').val();
+
+    $('.form-group input, .form-group select').css('border-color', '#e6eaee');
+
+    if (input1 == null || input1 == "") {
+      $('form[name="signup1"] input[name="prenom1"]').css('border-color', '#f44336');
+        $('#error').show();
+        return false;
+    } else if (input2 == null || input2 == "") {
+      $('form[name="signup1"] input[name="nom1"]').css('border-color', '#f44336');
+        $('#error').show();
+        return false;
+    } else if (input3 == null || input3 == "") {
+      $('form[name="signup1"] input[name="email1"]').css('border-color', '#f44336');
+        $('#error').show();
+        return false;
+    } else if ("form[name='signup1'] select[name='statute1'] option:selected" == false) {
+      $('form[name="signup1"] select[name="statute1"]').css('border-color', '#f44336');
+        $('#error').show();
+        return false;
+    } else if (input5 == null || input5 == "") {
+      $('form[name="signup1"] input[name="societe1"]').css('border-color', '#f44336');
+        $('#error').show();
+        return false;
+    }
+}
+</script>
+<script type="text/javascript">
+  $('#error img').click(function(){
+    $(this).parent().hide();
+  });
+</script>
+<script type="text/javascript">
+  $('.form-tab-col p').click(function(){
+    $('.form-tab-col p').removeClass('active');
+    $(this).addClass('active');
+    var tab = $(this).attr('data-toggle');
+    $('.tab-form').css('display','none');
+    $('.' + tab).css('display','block');
+  });
+</script>
+<script type="text/javascript">
+  function tab(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</body>
+</html>
